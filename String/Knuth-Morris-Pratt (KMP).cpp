@@ -1,6 +1,6 @@
 /*...................Allah is almighty*.................*/
 
-///-----KMP Algorithm-Substring Searching----///
+///-----KMP Algorithm (SubString Searching)-----///
 // Complexity O(textSize+patternSize)
 
 #include<bits/stdc++.h>
@@ -75,7 +75,7 @@ int main()
         cout << "Substirng Found" << endl;
     else
         cout << "Substirng not Found" << endl;
-
+    
     return 0;
 }
 
