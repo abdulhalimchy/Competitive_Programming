@@ -1,6 +1,7 @@
 /*...................Allah is almighty*.................*/
 
 ///-----KMP Algorithm-Substring Searching----///
+// Complexity O(textSize+patternSize)
 
 #include<bits/stdc++.h>
 #define MX 100000
@@ -35,7 +36,7 @@ void generate_lps(string pattern, int lengthOfthepattern)
 
 bool kmp(string text, string pattern, int textSize, int patternSize){
 
-    generate_lps(pattern, patternSize); // Gernate lps array
+    generate_lps(pattern, patternSize); // Generate lps array
 
     int i=0; // index of text
     int j=0; // index of pattern
