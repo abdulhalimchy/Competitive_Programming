@@ -1,6 +1,6 @@
 /*...................Allah is almighty*.................*/
 
-///-----Finding largest proper prefix which is suffix also----///
+///-----Finding largest proper prefix which is suffix also (Prefix suffix can overlap)----///
 
 /*Given, String="abcdabcd"
 
