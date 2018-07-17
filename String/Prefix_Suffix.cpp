@@ -17,7 +17,7 @@ using namespace std;
 int lps[MX]; //"Length of the largest proper prefix which is suffix also for 0 to MX length prefix" or "Faliure Table"
 
 //Generate largest proper prefix which is suffix also, for every prefix of the pattern string
-void generate_lps(string ptr, int lengthOfthePtr)
+void generate_lps1(string ptr, int lengthOfthePtr)
 {
     lps[0]=0, lps[1]=0;
     for(int i=2; i<=lengthOfthePtr; i++)//i is the length of the prefix
@@ -37,6 +37,24 @@ void generate_lps(string ptr, int lengthOfthePtr)
 
                 j=lps[j];
         }
+    }
+}
+
+
+//another way of generating lps[]
+void generate_lps2(string pattern, int patternSize)
+{
+	int i=1, j=0;
+	lps[0]=0, lps[1]=0;
+
+	while(i<patternSize)
+    {
+        while(j>0 && pattern[i]!=pattern[j])
+        {
+            j=lps[j];
+        }
+        i++, j++;
+        lps[i]=j;
     }
 }
 
