@@ -10,7 +10,7 @@ using namespace std;
 int lps[MX]; //"Length of the largest proper prefix which is suffix also for 0 to MX length prefix" or "Faliure Table"
 
 //Generate largest proper prefix which is suffix also, for every prefix of the pattern string
-void generate_lps(string pattern, int lengthOfthepattern)
+void generate_lps1(string pattern, int lengthOfthepattern)
 {
     lps[0]=0, lps[1]=0;
     for(int i=2; i<=lengthOfthepattern; i++)//i is the length of the prefix string
@@ -33,10 +33,30 @@ void generate_lps(string pattern, int lengthOfthepattern)
     }
 }
 
+//another way of generating lps[]
+void generate_lps2(string pattern, int patternSize)
+{
+	int i=1, j=0;
+	lps[0]=0, lps[1]=0;
 
-bool kmp(string text, string pattern, int textSize, int patternSize){
+	while(i<patternSize)
+    {
+        while(j>0 && pattern[i]!=pattern[j])
+        {
+            j=lps[j];
+        }
+        i++, j++;
+        lps[i]=j;
+    }
+}
 
-    generate_lps(pattern, patternSize); // Generate lps array
+
+
+
+//implementing of KMP algorithm
+bool kmp1(string text, string pattern, int textSize, int patternSize){
+
+    generate_lps1(pattern, patternSize); // Generate lps array, we can use any of generate_lps1() or generate_lps2(). Both are doing same
 
     int i=0; // index of text
     int j=0; // index of pattern
@@ -64,12 +84,31 @@ bool kmp(string text, string pattern, int textSize, int patternSize){
 }
 
 
+// Another way of implementation of KMP algorithm... 
+bool kmp2(string text, string pattern, int textSize, int patternSize)
+{
+    generate_lps1(pattern, patternSize); //we can use any of  generate_lps1() or generate_lps2(). Both are doing same
+    int i=0, j=0;
+
+    while(i<textSize)
+    {
+        while(j>0 && pattern[j]!=text[i])
+        {
+            j=lps[j];
+        }
+        i++, j++;
+        if(j==patternSize)
+            return true;
+    }
+}
+
+
 int main()
 {
     string pattern, text;
     cin >> text >> pattern;
     int n=text.size(), m=pattern.size();
-    bool flag=kmp(text, pattern, n, m);
+    bool flag=kmp1(text, pattern, n, m); //we can use any of kmp1() or  kmp2(). Both are doing same
 
     if(flag==true)
         cout << "Substirng Found" << endl;
