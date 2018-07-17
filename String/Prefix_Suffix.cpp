@@ -45,11 +45,11 @@ void generate_lps1(string ptr, int lengthOfthePtr)
 void generate_lps2(string pattern, int patternSize)
 {
 	int i=1, j=0;
-	lps[0]=0, lps[1]=0;
+	lps[0]=-1, lps[1]=0;
 
 	while(i<patternSize)
     {
-        while(j>0 && pattern[i]!=pattern[j])
+        while(j>=0 && pattern[i]!=pattern[j])
         {
             j=lps[j];
         }
