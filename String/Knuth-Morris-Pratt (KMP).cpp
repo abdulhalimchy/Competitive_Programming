@@ -37,11 +37,11 @@ void generate_lps1(string pattern, int lengthOfthepattern)
 void generate_lps2(string pattern, int patternSize)
 {
 	int i=1, j=0;
-	lps[0]=0, lps[1]=0;
+	lps[0]=-1, lps[1]=0;
 
 	while(i<patternSize)
     {
-        while(j>0 && pattern[i]!=pattern[j])
+        while(j>=0 && pattern[i]!=pattern[j])
         {
             j=lps[j];
         }
@@ -87,12 +87,12 @@ bool kmp1(string text, string pattern, int textSize, int patternSize){
 // Another way of implementation of KMP algorithm... 
 bool kmp2(string text, string pattern, int textSize, int patternSize)
 {
-    generate_lps1(pattern, patternSize); //we can use any of  generate_lps1() or generate_lps2(). Both are doing same
+    generate_lps2(pattern, patternSize); 
     int i=0, j=0;
 
     while(i<textSize)
     {
-        while(j>0 && pattern[j]!=text[i])
+        while(j>=0 && pattern[j]!=text[i])
         {
             j=lps[j];
         }
