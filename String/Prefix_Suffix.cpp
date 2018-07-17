@@ -62,7 +62,7 @@ int main()
 {
     string ptr;
     cin >> ptr;
-    generate_lps(ptr, ptr.size()); // Gernate lps
+    generate_lps1(ptr, ptr.size()); // Gernate lps
 
     //printing the failure table
     for(int i=0; i<=ptr.size(); i++)
