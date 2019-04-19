@@ -1,3 +1,4 @@
+//:::::::::::::::::::::nCr:::::::::::::::::::::
 #include<bits/stdc++.h>
 #define MX 100
 #define ll long long
