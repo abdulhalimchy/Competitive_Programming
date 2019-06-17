@@ -1,4 +1,4 @@
-///;;;;;;;;;;;;;;;;;;:;;;A* Search example with 8-puzzle:::::::::::::::::::::
+///::::::::::::::::::::::::::::::A* Search example with 8-puzzle:::::::::::::::::::::
 ///::::::::::::::::::::::The heuristic is based on Number of Misplaced Tiles::::::::::::
 #include<bits/stdc++.h>
 #define MX 5
