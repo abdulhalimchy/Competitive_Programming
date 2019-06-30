@@ -1,5 +1,6 @@
 //::::::::::::Range Minimum Query Using Sparse Table::::::::::::
-//__________________Time Complexity: O(n*log(n))________________
+//____________Preprocess Time Complexity: O(n*log(n))___________
+//__________________Query Time Complexity: O(1)_________________
 //Tutorial Link: https://www.youtube.com/watch?v=c5O7E_PDO4U
 
 #include<bits/stdc++.h>
