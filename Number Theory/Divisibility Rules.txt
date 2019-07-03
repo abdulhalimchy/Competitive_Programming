@@ -1,0 +1,92 @@
+:::::::::::::::::::::::::::Divisibility Rules:::::::::::::::::::::::
+
+				#3
+If sum of the digits is divisible by 3, then it is divisable by 3.
+Example: 381 (3+8+1=12, and 12÷3 = 4) is divisable by 3.
+	 217 (2+1+7=10, and 10÷3 = 3.33) is not divisable by 3.
+Note: This rule can be repeated when needed:
+	99996 (9+9+9+9+6 = 42, then 4+2=6) Yes
+
+				#4
+If the number formed by the last 2 digits is divisible by 4.
+Example: 1312 (12÷4=3) is divisable by 4.
+	 7019 (19÷4=4 3/4) is not divisable by 4.
+
+				#5
+If the last digit is 0 or 5, then it is divisable by 5.
+
+				#6
+If it is even and is divisible by 3, then it is divisable by 6.
+Example: 114 (it is even, and 1+1+4=6 and 6÷3 = 2) Yes
+	 308 (it is even, but 3+0+8=11 and 11÷3 = 3.66) No
+
+				#7
+Double the last digit and subtract it from a number made by the other digits. The result must be divisible by 7.
+Example: 672 (Double 2 is 4, 67-4=63, and 63÷7=9) Yes
+	 105 (Double 5 is 10, 10-10=0, and 0 is divisible by 7) Yes
+	 905 (Double 5 is 10, 90-10=80, and 80÷7=11.43) No
+
+				#8
+If the last three digits are divisible by 8, then it is divisable by 8.
+Example: 109816 (816÷8=102) Yes
+	 216302 (302÷8=37 3/4) No
+
+				#9
+If sum of the digits is divisible by 9, then it is divisable by 9.
+Example: 720 (7+2+0=9, and 9÷9 = 1) is divisable by 9.
+	 2013 (2+0+1+3=6) is not divisable by 9.
+Note: This rule can be repeated when needed:
+	1629 (1+6+2+9=18, and again, 1+8=9) Yes
+
+				#10
+If the last digit is 0, then it is divisable by 10.
+
+				#11
+Add digit, subtract next digit, Add digit, subtract next digit and so on.
+Then check if that answer is divisible by 11.
+Example: 3729 (+3-7+2-9 = -11) Yes
+	 913 (+9-1+3 = 11) Yes
+	 987 (+9-8+7 = 8) No
+
+				#12
+If the number is divisible by both 3 and 4, then it is divisable by 12.
+Example: 648 {(By 3? 6+4+8=18 and 18÷3=6 Yes) and (By 4? 48÷4=12 Yes)} Yes.
+	 524 {(By 3? 5+2+4=11, 11÷3=3.66 No) and (Don't need to check by 4)} No.
+
+				#14
+If it is divisible by 2 and by 7, then it is divisable by 14.
+
+				#15
+If it is divisible by 3 and by 5, then it is divisable by 15.
+
+				#16
+The last four digits must be divisible by 16.
+Example: 157648 (7648÷16= 478) Yes
+
+				#18
+If it is divisible by 2 and by 9, then it is divisable by 18.
+
+				#20
+Rule-1: If it is divisible by 10, and the tens digit is even.
+Example: 360 (360 divisible by 10, and 6 is even) Yes
+Rule-2: If the number formed by the last two digits is divisible by 20.
+Example: 480 (80 is divisable by 20) Yes
+
+				#21
+If it is divisible by 3 and by 7, then it is divisable by 21.
+
+				#22
+If it is divisible by 2 and by 11, then it is divisable by 22.
+
+				#24
+If it is divisible by 3 and by 8, then it is divisable by 24.
+
+				#25
+If the number formed by the last two digits is divisible by 25.
+Example: 134250 (50 is divisible by 25) Yes
+
+				#28
+If it is divisible by 4 and by 7, then it is divisable by 28.
+
+				#30
+If it is divisible by 3 and by 10, then it is divisable by 30.
