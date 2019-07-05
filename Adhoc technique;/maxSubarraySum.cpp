@@ -1,3 +1,4 @@
+:::::::::::::::::::::::Maximum Sum of Subarray:::::::::::::::::::::
 /*Given an array with n positive and negative numbers, find the subarray with one or more
 consecutive numbers where the sum of the subarray is maximum.
 
@@ -33,6 +34,7 @@ int maxSubArraySum(int a[], int size)
         << max_so_far << endl;
     cout << "Starting index "<< start
         << endl << "Ending index "<< end << endl;
+    return max_so_far;
 }
 
 int main()
