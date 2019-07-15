@@ -1,4 +1,4 @@
-/*::::::::::::::::::Maximum sub-matrix sum:::::::::::::::::::::::
+/*::::::::::::::::::Maximum Sum Sub-matrix:::::::::::::::::::::::
 Given, NxN matrix, find out the sum of the maximal sub-rectangle.
 */
 
