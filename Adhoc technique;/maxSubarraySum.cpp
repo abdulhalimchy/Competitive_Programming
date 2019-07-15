@@ -1,6 +1,6 @@
-:::::::::::::::::::::::Maximum Sum of Subarray:::::::::::::::::::::
+//:::::::::::::::::::::::Maximum Sum of Subarray:::::::::::::::::::::
 /*Given an array with n positive and negative numbers, find the subarray with one or more
-consecutive numbers where the sum of the subarray is maximum.
+consecutive numbers where the sum of the subarray is maximum.*/
 
 #include<bits/stdc++.h>
 #define MX 1000
