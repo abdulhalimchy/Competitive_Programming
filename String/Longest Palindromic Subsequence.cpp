@@ -1,3 +1,7 @@
+/*::::::::::::::::Longest Palindromic Subsequence::::::::::::::::
+::::::::::::::::::::::Time Complexity O(n^2):::::::::::::::::::::
+:::::::::::::::::::::Space Complexity O(n^2):::::::::::::::::::*/
+
 #include<bits/stdc++.h>
 #define MX 105
 using namespace std;
