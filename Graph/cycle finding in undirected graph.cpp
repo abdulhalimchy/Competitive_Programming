@@ -45,8 +45,8 @@ int main()
             dfs(i,0);
     }
     if(f==1)
-        printf("NO\n");
+        printf("NO\n"); //Not a tree, has cycle.
     else
-        printf("YES\n");
+        printf("YES\n"); //It is a tree, no cycle.
     return 0;
 }
