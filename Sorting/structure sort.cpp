@@ -1,4 +1,6 @@
-/*:::::::::::::::::::::::::::::::::Structure Sort:::::::::::::::::::::::::::::*/
+/*:::::::::::::::::::::::::::::::::Structure Sort:::::::::::::::::::::::::::::
+  Sort() funciton uses Quick Sort Algorithm. Average Complexity: O(n*log(n)), In worst case Complexity: O(n^2)
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
