@@ -10,7 +10,7 @@ bool cmp(string a, string b)
 }
 
 
-vector<string> bigSorting(vector<string> unsorted) {
+vector<string> stringSorting(vector<string> unsorted) {
     sort(unsorted.begin(), unsorted.end(), cmp);  // Sort the unsorted list of string
     return unsorted;
 
