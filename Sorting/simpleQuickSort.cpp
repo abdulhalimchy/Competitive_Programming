@@ -1,7 +1,7 @@
 /*::::::::::::::::::::::::::::::Simple QuickSort:::::::::::::::::::::::::::::::
                     Average case - time complexity : O(n logn)
                     Worst case - time complexity : O(n^2);
-Note: worst case occurs when it is already sorted in ascending/descending order.
+Note: worst case occurs when it is already sorted in ascending/descending order. The implementation below is not stable. There are better ways to implement QuickSort.
 */
 #include<iostream>
 #include<vector>
